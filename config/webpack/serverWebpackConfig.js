@@ -57,7 +57,7 @@ const configureServer = () => {
   // And no need for the MiniCssExtractPlugin
   serverWebpackConfig.plugins = serverWebpackConfig.plugins.filter(
     (plugin) =>
-      plugin.constructor.name !== 'WebpackAssetsManifest' &&
+      //plugin.constructor.name !== 'WebpackAssetsManifest' &&
       plugin.constructor.name !== 'MiniCssExtractPlugin' &&
       plugin.constructor.name !== 'ForkTsCheckerWebpackPlugin'
   )
